@@ -12,16 +12,12 @@ int main(int argc, char** argv){
 	int b = atoi(argv[2]);
 	
 	int count = 0;
-	printf("a=%d b=%d c=%d",a,b,count);
 	while((a % 10 != a % 100) && (b % 10 != b % 100)){
-		// count += a % 10 != b % 10;
-		if(a % 10 != b % 10){
-			count++;
-		}
-		a /= 10;
-		b /= 10;
+		count += a % 10 != b % 10;
+		a /= 10; b /= 10;
 	}
 	if(a != b) count++;
+
 	printf("%d\n", count);
 
 	return 0;

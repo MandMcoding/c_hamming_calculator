@@ -1,3 +1,3 @@
-exe: hamming_calculator.c
-	gcc -Wall -Werror -Wextra -o exe hamming_calculator.c
+exe: hamming_calculator3.c
+	gcc -g -Wall -Werror -Wextra -o exe hamming_calculator3.c
 
